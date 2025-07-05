@@ -28,3 +28,31 @@ You should be able to use kubectl -n eda-system get pods to verify that EDA core
 ```
 kubectl -n eda-system get pods | awk 'NR==1 || /eda/'
 ```
+The list of EDA pods and status should be:
+```
+NAME                                  READY   STATUS    RESTARTS   AGE
+cx-eda--leaf1-sim-864b97d58d-g9zq2    2/2     Running   0          12h
+cx-eda--leaf2-sim-6698fc668f-4blcm    2/2     Running   0          12h
+cx-eda--spine1-sim-677f5499cf-fn2pg   2/2     Running   0          12h
+eda-api-9985cb78-gphnk                1/1     Running   0          12h
+eda-appstore-8d679c5b-fqmt6           1/1     Running   0          12h
+eda-asvr-dc9877c8d-5j62k              1/1     Running   0          12h
+eda-bsvr-6bf77b64c-9l2zx              1/1     Running   0          12h
+eda-ce-84c6486cb7-f8jzc               1/1     Running   0          12h
+eda-cx-5dc6cf9d96-dcrrf               1/1     Running   0          12h
+eda-fe-54d8db877f-xk7l8               1/1     Running   0          12h
+eda-fluentbit-hkwvd                   1/1     Running   0          12h
+eda-fluentd-54cf4bd5d7-j98zg          1/1     Running   0          12h
+eda-git-754df68df5-8kgx4              1/1     Running   0          12h
+eda-git-replica-784dbdbfc8-5zdzz      1/1     Running   0          12h
+eda-keycloak-5d569565b7-2gmc7         1/1     Running   0          12h
+eda-metrics-server-799d54cb7-688nz    1/1     Running   0          12h
+eda-npp-eda-leaf1                     1/1     Running   0          12h
+eda-npp-eda-leaf2                     1/1     Running   0          12h
+eda-npp-eda-spine1                    1/1     Running   0          12h
+eda-postgres-cd89bfc57-q56cc          1/1     Running   0          12h
+eda-sa-576c98865f-66vq9               1/1     Running   0          12h
+eda-sc-84546648c5-djr49               1/1     Running   0          12h
+eda-se-1                              1/1     Running   0          12h
+eda-toolbox-84c95bd8c6-lqxh7          1/1     Running   0          12h
+```
