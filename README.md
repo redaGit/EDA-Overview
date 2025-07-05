@@ -8,3 +8,9 @@ Proceed with cloning the EDA playground repository that contains everything you 
 git clone https://github.com/nokia-eda/playground && \
 cd playground
 ```
+The prerequisites "make" and "docker" have already been installed in the VM.
+
+Set the EXT_DOMAIN_NAME environment variable in your shell:
+```
+export EXT_DOMAIN_NAME=<xr>.wwrkshpz.net
+```
