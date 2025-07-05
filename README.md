@@ -19,3 +19,12 @@ Note: if you want to enable the Natural Language support for the EDA Query funct
 ```
 export LLM_API_KEY=<your-OpenAI-API-key>
 ```
+Run the EDA install:
+```
+make try-eda
+```
+The installation will take approximately 10 minutes to complete. Once it is done, you can optionally verify the installation.
+You should be able to use kubectl -n eda-system get pods to verify that EDA core components have started and in the Ready state:
+```
+kubectl -n eda-system get pods | awk 'NR==1 || /eda/'
+```
