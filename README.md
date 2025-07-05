@@ -12,5 +12,5 @@ The prerequisites "make" and "docker" have already been installed in the VM.
 
 Set the EXT_DOMAIN_NAME environment variable in your shell:
 ```
-export EXT_DOMAIN_NAME=<xr>.wwrkshpz.net
+export EXT_DOMAIN_NAME=<x>.wwrkshpz.net
 ```
