@@ -99,33 +99,33 @@ Using UI:
 
 INSERT IMAGE EDA-UI1 - Main Page 
 
-- 1 The home page features a dashboard that provides some key information about the managed nodes and their interfaces.
-- 2 The home page has two dashboards to select from. The page picker lets you do this. The picker will be available on other pages as well.
-- 3 Namespace selector. When you have more than one namespace (eda is the default namespace) you will be able to switch between them.
-- 4 Transaction basket. This is where your uncommitted transactions will be stored. Clicking on the basket icon also lets you do operations on the transactions.
-- 5 User menu. This is where you can change your password, log out, and access the help and about pages.
-- 6 Side menu toggle. Expands/collapses the left side menu where all EDA apps and menu items are.
-- 7 Application icon. Clicking on the icon in the collapsed view opens up the application page.
-- 8 Application category toggle. Can be used to hide/show the application category.
-- 9 Application search. Type in the search term and the apps list will be filtered.
+1. The home page features a dashboard that provides some key information about the managed nodes and their interfaces.
+2.  The home page has two dashboards to select from. The page picker lets you do this. The picker will be available on other pages as well.
+3.  Namespace selector. When you have more than one namespace (eda is the default namespace) you will be able to switch between them.
+4.  Transaction basket. This is where your uncommitted transactions will be stored. Clicking on the basket icon also lets you do operations on the transactions.
+5.  User menu. This is where you can change your password, log out, and access the help and about pages.
+6.  Side menu toggle. Expands/collapses the left side menu where all EDA apps and menu items are.
+7.  Application icon. Clicking on the icon in the collapsed view opens up the application page.
+8.  Application category toggle. Can be used to hide/show the application category.
+9.  Application search. Type in the search term and the apps list will be filtered.
 
 Insert Image EDA-UI2 -App Page
 
-- 1 Category
-- 2 Context menu button. Opens up a menu with commands like edit, duplicate, delete.
-- 3 Click on this icon to display the status bar for the selected resource.
+1. Category
+2. Context menu button. Opens up a menu with commands like edit, duplicate, delete.
+3. Click on this icon to display the status bar for the selected resource.
 
 Inset Image EDA-UI3 Status Bar
 
-- 1 Resource
-- 2 Metadata
-- 3 Status
+1. Resource
+2. Metadata
+3. Status
 
 Insert Image EDA-UI4 EDIT Page 
 
-- 1 Navigation bar, aka Form fields
-- 2 Form view
-- 3 YAML view
+1. Navigation bar, aka Form fields
+2. Form view
+3. YAML view
 
 
 # Creat Toloplogy 
