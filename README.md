@@ -60,6 +60,19 @@ eda-se-1                              1/1     Running   0          12h
 eda-toolbox-84c95bd8c6-lqxh7          1/1     Running   0          12h
 ```
 
+# Some Concepts 
+EDA is an automation framework that follows declarative principles. An operator's input is the desired state of the resources and EDA takes care of the deployment, provisioning, configuration and reconciliation of the resource.
+
+What is a Resource? 
+
+In EDA, a reource is anything that can be automatd:
+  - an interface on a network device
+  - a complete fabric configuration1
+  - a network service like a VPN or a VRF2
+  - and even non-network related resources like a user account, a DNS record, or a firewall rule.
+EDA is built on Kuberntee platform, it represents its resources via Custom Resources (CRs) of Kubernetes that can be created using various methods including the Kubernetes (K8s) API, the EDA API, or through a User Interface (UI).
+  
+
 # Try-EDA topology example: 
 
 Try-EDA default make create a topoogy with 2 leafs and 1 spine. This  topology deployed as part of the quickstart resulted in creation of topology nodes, with each node represented by an SR Linux simulator. The topology nodes in EDA are represented by the TopoNode resource, and this resource has a status field to indicate its health.
@@ -82,16 +95,22 @@ Using UI:
     Username: admin
     Password: admin
 ```
-# Some Concepts 
-EDA is an automation framework that follows declarative principles. An operator's input is the desired state of the resources and EDA takes care of the deployment, provisioning, configuration and reconciliation of the resource.
+# Exploring EDA UI 
 
-What is a Resource? 
+- Main Menu
+- Dashboard
+- App Store
+- TBD
 
-In EDA, a reource is anything that can be automatd:
-  - an interface on a network device
-  - a complete fabric configuration1
-  - a network service like a VPN or a VRF2
-  - and even non-network related resources like a user account, a DNS record, or a firewall rule.
-EDA is built on Kuberntee platform, it represents its resources via Custom Resources (CRs) of Kubernetes that can be created using various methods including the Kubernetes (K8s) API, the EDA API, or through a User Interface (UI).
-  
+# Creat Toloplogy 
+We will create a new topology of 2 spines and 4 leafs 
 
+# Creat a Fabric  ( Fabric resource) 
+
+To put it simply, a Fabric resource represents a DC fabric configuration with all its components like:
+- a set of leaf and spine devices
+- allocation pools for system IPs, ASN numbers
+- inter-switch links flavor (numbered, unnumbered, vlans)
+- underlay protocol (eBGP, IGP)
+- overlay protocol
+At the end of the day, a Fabric resource defines and configures everything a DC fabric needs to support overlay networks or L2/L3 services.
