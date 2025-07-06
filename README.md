@@ -23,6 +23,9 @@ Run the EDA install:
 ```
 make try-eda
 ```
+
+# Verify the installation
+
 The installation will take approximately 10 minutes to complete. Once it is done, you can optionally verify the installation.
 You should be able to use kubectl -n eda-system get pods to verify that EDA core components have started and in the Ready state:
 ```
@@ -57,6 +60,8 @@ eda-se-1                              1/1     Running   0          12h
 eda-toolbox-84c95bd8c6-lqxh7          1/1     Running   0          12h
 ```
 
+# Try-EDA topology example: 
+
 Try-EDA default make create a topoogy with 2 leafs and 1 spine. This  topology deployed as part of the quickstart resulted in creation of topology nodes, with each node represented by an SR Linux simulator. The topology nodes in EDA are represented by the TopoNode resource, and this resource has a status field to indicate its health.
 
 The easiest way to tell the current state of nodes is via the UI, or via kubectl
@@ -77,3 +82,16 @@ Using UI:
     Username: admin
     Password: admin
 ```
+# Some Concepts 
+EDA is an automation framework that follows declarative principles. An operator's input is the desired state of the resources and EDA takes care of the deployment, provisioning, configuration and reconciliation of the resource.
+
+What is a Resource? 
+
+In EDA, a reource is anything that can be automatd:
+  - an interface on a network device
+  - a complete fabric configuration1
+  - a network service like a VPN or a VRF2
+  - and even non-network related resources like a user account, a DNS record, or a firewall rule.
+EDA is built on Kuberntee platform, it represents its resources via Custom Resources (CRs) of Kubernetes that can be created using various methods including the Kubernetes (K8s) API, the EDA API, or through a User Interface (UI).
+  
+
