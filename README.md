@@ -131,6 +131,19 @@ Insert Image EDA-UI4 EDIT Page
 # Creat Toloplogy 
 We will create a new topology of 2 spines and 4 leafs 
 
+INSERT TOPO6 Image here 
+
+before create a new topology, let's tear down the existing topology 
+```
+sudo make teardown-topology
+```
+
+To create a new topology we will using a yaml file  "fabrci4leafs2spines.yaml"  
+```
+sudo make TOPO=../images/topo-6nodes.yaml topology-load
+```
+
+
 # Creat a Fabric  ( Fabric resource) 
 
 To put it simply, a Fabric resource represents a DC fabric configuration with all its components like:
@@ -141,15 +154,8 @@ To put it simply, a Fabric resource represents a DC fabric configuration with al
 - overlay protocol
 At the end of the day, a Fabric resource defines and configures everything a DC fabric needs to support overlay networks or L2/L3 services.
 
-before create a new topology, let's tear down the existing topology 
-```
-make tear-down topolgy
-```
-
-To create a new topology we will using a yaml file  "fabrci4leafs2spines.yaml"  
-```
-make topo=../fabric4leaf2spines.yaml
-```
+# Intent and Deviation
+TBD , adding FEC to an interface 
 
 # Create an EVPN overlay 
 using GUI
