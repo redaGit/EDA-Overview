@@ -155,5 +155,17 @@ make topo=../fabric4leaf2spines.yaml
 using GUI
 
 # Levarging the Labels 
+Add an EVPN interface
+Remove an EVPN interface 
+
+# Connection to the nodes 
+
+# Dashboard
+
+# Notified application , discord 
+
+# Restore /Revert concept 
+
+# eadctl 
 
 
