@@ -56,3 +56,24 @@ eda-sc-84546648c5-djr49               1/1     Running   0          12h
 eda-se-1                              1/1     Running   0          12h
 eda-toolbox-84c95bd8c6-lqxh7          1/1     Running   0          12h
 ```
+
+Try-EDA default make create a topoogy with 2 leafs and 1 spine. This  topology deployed as part of the quickstart resulted in creation of topology nodes, with each node represented by an SR Linux simulator. The topology nodes in EDA are represented by the TopoNode resource, and this resource has a status field to indicate its health.
+
+The easiest way to tell the current state of nodes is via the UI, or via kubectl
+```
+kubectl -n eda get toponodes
+```
+```
+NAME     PLATFORM       VERSION   OS    ONBOARDED   MODE     NPP         NODE     AGE
+leaf1    7220 IXR-D3L   24.10.1   srl   true        normal   Connected   Synced   12h
+leaf2    7220 IXR-D3L   24.10.1   srl   true        normal   Connected   Synced   12h
+spine1   7220 IXR-D5    24.10.1   srl   true        normal   Connected   Synced   12h
+```
+
+Using UI:
+```
+--> The UI can be accessed using https://<x>.wrkshpz.net:9443 
+--> INFO: EDA is launched
+    Username: admin
+    Password: admin
+```
