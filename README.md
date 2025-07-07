@@ -8,11 +8,17 @@ Proceed with cloning the EDA playground repository that contains everything you 
 git clone https://github.com/nokia-eda/playground && \
 cd playground
 ```
-The prerequisites "make" and "docker" have already been installed in the VM.
-
+- Install Docker using "make" (automated installer) 
+```
+make install-docker
+```
+- Ensure the relevant sysctl values are properly sized by pasting and running the following:
 Set the EXT_DOMAIN_NAME environment variable in your shell:
 ```
-export EXT_DOMAIN_NAME=<x>.wwrkshpz.net
+make configure-sysctl-params
+```
+
+- export EXT_DOMAIN_NAME=<x>.wwrkshpz.net
 ```
 Note: if you want to enable the Natural Language support for the EDA Query functionality, provide the LLM key (OpenAI) with an additional environment variabl.
 
@@ -159,8 +165,6 @@ To put it simply, a Fabric resource represents a DC fabric configuration with al
 - underlay protocol (eBGP, IGP)
 - overlay protocol
 At the end of the day, a Fabric resource defines and configures everything a DC fabric needs to support overlay networks or L2/L3 services.
-
-
 
 # Intent and Deviation
 TBD , adding FEC to an interface 
