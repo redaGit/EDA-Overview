@@ -128,12 +128,12 @@ Insert Image EDA-UI4 EDIT Page
 3. YAML view
 
 
-# Creat Toloplogy 
+# Create Toloplogy 
 We will create a new topology of 2 spines and 4 leafs 
 
 INSERT TOPO6 Image here 
 
-before create a new topology, let's tear down the existing topology 
+before creating a new topology, let's tear down the existing topology 
 ```
 sudo make teardown-topology
 ```
@@ -150,7 +150,7 @@ sudo make TOPO=../images/topo-6nodes.yaml topology-load
    Check the resources being created (Topology, nodes, links, interfaces)  
 
 
-# Creat a Fabric  ( Fabric resource) 
+# Create a Fabric  (Fabric resource) 
 
 To put it simply, a Fabric resource represents a DC fabric configuration with all its components like:
 - a set of leaf and spine devices
