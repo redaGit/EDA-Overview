@@ -160,11 +160,37 @@ To put it simply, a Fabric resource represents a DC fabric configuration with al
 - overlay protocol
 At the end of the day, a Fabric resource defines and configures everything a DC fabric needs to support overlay networks or L2/L3 services.
 
+
+
 # Intent and Deviation
 TBD , adding FEC to an interface 
 
 # Create an EVPN overlay 
-using GUI
+
+In EDA Layer 2 & Layer 3 EVPN are called "Virtual Networks"
+Insert VNET PICTURE 
+
+The primary components that make up the VNET include:
+
+**BridgeDomain**: Represents a Layer 2 broadcast domain. It is used in conjunction with VLAN and BridgeInterface resources, which attach sub-interfaces to this L2 broadcast domain.
+
+**VLAN**: Groups sub-interfaces together under a common VLAN ID. VLAN IDs can be automatically assigned from a pool or manually set by the user. The VLAN uses a label selector to select the interfaces on which to provisioning the sub-interfaces.
+
+**BridgeInterface**: Allows operators to manually attach a sub-interface to a specific BridgeDomain.
+
+**Router**: Acts as a Layer 3 domain manager. It can connect multiple BridgeDomains through an IRBInterface or link directly to RoutedInterfaces.
+
+**IRBInterface** (Integrated Routing and Bridging Interface): Connects a BridgeDomain to a Router, facilitating communication between Layer 2 and Layer 3 networks.
+
+**RoutedInterface**: Represents a directly connected Layer 3 interface on a device that is attached to a Router.
+
+**DHCPRelay**: Enables DHCP relay functionality on sub-interfaces within the VNET, facilitating dynamic IP address allocation.
+
+- **Layer 2 EVPN**
+
+Using EDA UI, we will create a 2 EVPNs with 2 bridgedomains
+- 1 A bridge domain for compute 
+- 2 A bridge domain for storage 
 
 # Levarging the Labels 
 Add an EVPN interface
