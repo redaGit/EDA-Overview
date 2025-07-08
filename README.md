@@ -257,8 +257,20 @@ For thefull list of supported webhook providers is available at the [shouterrr d
 1.  Install Notifier app from EDA App store.
 2.  Configure Provide
 3.  Configure Notifer
-   
 
+![de:EDA-Overiview](notifierinstall.jpg)
+
+
+```   
+apiVersion: notifiers.eda.nokia.com/v1
+kind: Provider
+metadata:
+ name: discord
+ namespace: eda-system
+spec:
+ enabled: true
+ uri: <webhook>
+```
 # EDA RestAPI  
 
 
