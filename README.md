@@ -143,7 +143,7 @@ Using UI:
 We will create a new topology of 2 spines and 4 leafs 
 
 
-![de:EDA-Overview](TOPO6.jpg)
+![de:EDA-Overview](Topo6.jpg)
 
 
 before creating a new topology, let's tear down the existing topology 
