@@ -98,13 +98,16 @@ spine1   7220 IXR-D5    24.10.1   srl   true        normal   Connected   Synced 
 
 Using UI:
 ```
+--> forward the display
+```
+sudo make start-ui-port-forward
+```
 --> The UI can be accessed using https://<x>.wrkshpz.net:9443 
 --> INFO: EDA is launched
     Username: admin
     Password: admin
 ```
 # Exploring EDA UI 
-
 
 ![de:EDA-Overview](EDA-UI1.png)
 
@@ -251,6 +254,10 @@ In many deployement we are required to integrate with other applciations. One op
 For today example we will be integrating and sending notification to Discord.
 For thefull list of supported webhook providers is available at the [shouterrr docs](https://containrrr.dev/shoutrrr)
 
+1.  Install Notifier app from EDA App store.
+2.  Configure Provide
+3.  Configure Notifer
+   
 
 # EDA RestAPI  
 
