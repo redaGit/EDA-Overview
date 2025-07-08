@@ -246,12 +246,13 @@ In EDA, states and monitoring are an integral part of the system, meaning when a
 Let's explore some of the Day 2+ operation. 
 
 # Notification and Application Integration 
-In many deployement we are required to integrate with other applciations. One option is to use EDA custom notifier. The EDA Notifier application allows an operator to create a custom notifications based on the events registered by EDA and deliver them to popular notification and chat systems.
+In many deployement we are required to integrate with other applciations. One option is to use EDA custom notifier. The EDA Notifier application allows an operator to create custom notifications based on the events registered by EDA and deliver them to popular notification and chat systems.
 
-The full list of supported providers is available at the shouterrr docs.
+For today example we will be integrating and sending notification to Discord.
+For thefull list of supported webhook providers is available at the [shouterrr docs](https://containrrr.dev/shoutrrr)
 
-# Restore /Revert concept 
 
-# eadctl 
+# EDA RestAPI  
+
 
 
