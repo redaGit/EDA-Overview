@@ -172,7 +172,7 @@ To put it simply, a Fabric resource represents a DC fabric configuration with al
 - overlay protocol
 At the end of the day, a Fabric resource defines and configures everything a DC fabric needs to support overlay networks or L2/L3 services.
 
-Using the UI we will create [EDA-Overview](myfabric.yaml)
+Using the UI we will create [myfabric](myfabric.yaml)
 
 
 # Intent and Deviation
