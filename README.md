@@ -13,19 +13,21 @@ cd playground
 make install-docker
 ```
 - Ensure the relevant sysctl values are properly sized by pasting and running the following:
-Set the EXT_DOMAIN_NAME environment variable in your shell:
+
 ```
 make configure-sysctl-params
 ```
 
-- export EXT_DOMAIN_NAME=<x>.wwrkshpz.net
+- Set the EXT_DOMAIN_NAME environment variable in your shell:
+```
+export EXT_DOMAIN_NAME=\<x\>.wwrkshpz.net
 ```
 Note: if you want to enable the Natural Language support for the EDA Query functionality, provide the LLM key (OpenAI) with an additional environment variabl.
+```
+export LLM_API_KEY=\<your-OpenAI-API-key\>
+```
 
-```
-export LLM_API_KEY=<your-OpenAI-API-key>
-```
-Run the EDA install:
+- Run the EDA install:
 ```
 make try-eda
 ```
