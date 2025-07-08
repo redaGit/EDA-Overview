@@ -260,6 +260,10 @@ For thefull list of supported webhook providers is available at the [shouterrr d
 
 ![de:EDA-Overiview](notifierinstall.jpeg)
 
+Configure the provider
+
+A Provider resource configures the destination where alarms can be sent.
+You can configure many different providers in the Notifier app, but for this task we will use Discord, as it is easy to set up in a short amount of time we have.
 
 ```   
 apiVersion: notifiers.eda.nokia.com/v1
@@ -271,6 +275,9 @@ spec:
  enabled: true
  uri: <webhook>
 ```
+
+Configure the Notifier 
+
 # EDA RestAPI  
 
 
