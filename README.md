@@ -105,7 +105,9 @@ Using UI:
 ```
 # Exploring EDA UI 
 
-INSERT IMAGE EDA-UI1 - Main Page 
+
+![de:EDA-Overview](EDA-UI1.png)
+
 
 1. The home page features a dashboard that provides some key information about the managed nodes and their interfaces.
 2.  The home page has two dashboards to select from. The page picker lets you do this. The picker will be available on other pages as well.
@@ -117,19 +119,20 @@ INSERT IMAGE EDA-UI1 - Main Page
 8.  Application category toggle. Can be used to hide/show the application category.
 9.  Application search. Type in the search term and the apps list will be filtered.
 
-Insert Image EDA-UI2 -App Page
+
+![de:EDA-Overview](EDA-UI2.png)
 
 1. Category
 2. Context menu button. Opens up a menu with commands like edit, duplicate, delete.
 3. Click on this icon to display the status bar for the selected resource.
 
-Inset Image EDA-UI3 Status Bar
+![de:EDA-Overview](EDA-UI3.png)
 
 1. Resource
 2. Metadata
 3. Status
 
-Insert Image EDA-UI4 EDIT Page 
+![de:EDA-Overview](EDA-UI4.png)
 
 1. Navigation bar, aka Form fields
 2. Form view
@@ -139,7 +142,9 @@ Insert Image EDA-UI4 EDIT Page
 # Create Toloplogy 
 We will create a new topology of 2 spines and 4 leafs 
 
-INSERT TOPO6 Image here 
+
+![de:EDA-Overview](TOPO6.jpg)
+
 
 before creating a new topology, let's tear down the existing topology 
 ```
