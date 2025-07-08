@@ -1,0 +1,53 @@
+apiVersion: services.eda.nokia.com/v1alpha1
+kind: VirtualNetwork
+metadata:
+  name: evpnstorage
+  namespace: eda
+  labels: null
+spec:
+  bridgeDomains:
+    - name: brd2
+      spec:
+        eviPool: evi-pool
+        l2proxyARPND:
+          dynamicLearning:
+            ageTime: 2000
+            enabled: true
+            sendRefresh: 2000
+          ipDuplication:
+            enabled: true
+            holdDownTime: 10
+            monitoringWindow: 10
+            numMoves: 4
+          proxyARP: true
+          proxyND: false
+          tableSize: 250
+        macAging: 300
+        macDuplicationDetection:
+          action: StopLearning
+          enabled: false
+          holdDownTime: 9
+          monitoringWindow: 3
+          numMoves: 5
+        tunnelIndexPool: tunnel-index-pool
+        vniPool: vni-pool
+  vlans:
+    - name: storage
+      spec:
+        bridgeDomain: brd2
+        interfaceSelector:
+          - application = storage
+        vlanID: pool
+        vlanPool: vlan-pool
+  bridgeInterfaces: []
+  irbInterfaces: []
+  routedInterfaces: []
+  routers: []
+  protocols:
+    staticRoutes: []
+    bgp:
+      bgpGroups: []
+      bgpPeers: []
+    routingPolicies:
+      policies: []
+      prefixSets: []
