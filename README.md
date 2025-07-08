@@ -258,7 +258,7 @@ For thefull list of supported webhook providers is available at the [shouterrr d
 2.  Configure Provide
 3.  Configure Notifer
 
-![de:EDA-Overiview](notifierinstall.jpg)
+![de:EDA-Overiview](notifierinstall.jpeg)
 
 
 ```   
