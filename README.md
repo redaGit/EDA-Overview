@@ -185,6 +185,11 @@ To simplify the automation, of ip assignment in EDA, The concept of pool allocat
 
 Using the UI we will create [myfabric](myfabric.yaml)
 
+- **Commit**, Dry-run and transaction concepts in EDA:
+   
+The user-submitted declarative intents are all transacted together and either all of them are applied by the nodes or all of them will be rolled back.
+The transaction-based model also allows for Dry Runs - seeing what changes will be rolled out to your network before actually applying them.
+
 # Intent and Deviation
 TBD , adding FEC to an interface 
 
