@@ -229,7 +229,11 @@ Labels are not mere descriptions of objects; they are also used throughout EDA a
 
 # Connection to the nodes 
 
-# Dashboard
+# Network States and Monitoring
+
+![de:EDA-Overview](Topo6.jpg)
+
+
 
 # Notified application , discord 
 
