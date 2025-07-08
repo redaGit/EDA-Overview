@@ -245,7 +245,10 @@ Labels are not mere descriptions of objects; they are also used throughout EDA a
 In EDA, states and monitoring are an integral part of the system, meaning when a Fabric is created, it shows the Fabric components, states and health of its components 
 Let's explore some of the Day 2+ operation. 
 
-# Notified application , discord 
+# Notification and Application Integration 
+In many deployement we are required to integrate with other applciations. One option is to use EDA custom notifier. The EDA Notifier application allows an operator to create a custom notifications based on the events registered by EDA and deliver them to popular notification and chat systems.
+
+The full list of supported providers is available at the shouterrr docs.
 
 # Restore /Revert concept 
 
