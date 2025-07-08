@@ -172,6 +172,17 @@ To put it simply, a Fabric resource represents a DC fabric configuration with al
 - overlay protocol
 At the end of the day, a Fabric resource defines and configures everything a DC fabric needs to support overlay networks or L2/L3 services.
 
+# Pool allocation 
+To simplify the automation, of ip assignment in EDA, The concept of pool allocation Pool is defined as a resource of a specific type. Four kinds of allocation pools are available in EDA, each defines a pool with a unique property to cater for a specific allocation use case:
+
+   **Indices** Specify a size and starting value
+   **IP Addresses** Specify an IPv4 or IPv6 subnet including mask in CIDR format (e.g. 192.0.2.0/24)
+    Return an address from the subnet on allocation, without any mask information (e.g. 192.0.2.1)
+   **IP Addresses + Masks** Specify an IPv4 or IPv6 subnet including mask in CIDR format (e.g. 192.0.2.0/24)
+    Return an address from the subnet on allocation, with mask information (e.g. 192.0.2.1/24)
+   **Subnets** Specify an IPv4 or IPv6 subnet including mask in CIDR format (e.g. 192.0.2.0/24) and a subnet length (e.g. 31)
+    Return a subnet of the specified length from the provided subnet on allocation, with mask information (e.g. 192.0.2.8/31)
+
 Using the UI we will create [myfabric](myfabric.yaml)
 
 # Intent and Deviation
