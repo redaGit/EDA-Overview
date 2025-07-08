@@ -174,14 +174,15 @@ At the end of the day, a Fabric resource defines and configures everything a DC 
 
 Using the UI we will create [myfabric](myfabric.yaml)
 
-
 # Intent and Deviation
 TBD , adding FEC to an interface 
 
 # Create an EVPN overlay 
 
 In EDA Layer 2 & Layer 3 EVPN are called "Virtual Networks"
-Insert VNET PICTURE 
+Insert  
+
+![de:EDA-Overview](VNET.jpg)
 
 The primary components that make up the VNET include:
 
@@ -202,8 +203,8 @@ The primary components that make up the VNET include:
 - **Layer 2 EVPN**
 
 Using EDA UI, we will create a 2 EVPNs with 2 bridgedomains
-- 1 A bridge domain for compute 
-- 2 A bridge domain for storage 
+- [evpncompute](evpncompute.yaml) with a bridge domain for compute 
+- [evpnstorage](evpnstorage.yaml) with bridge domain for storage 
 
 # Levarging the Labels 
 Add an EVPN interface
