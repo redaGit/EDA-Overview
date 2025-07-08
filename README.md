@@ -231,9 +231,10 @@ Labels are not mere descriptions of objects; they are also used throughout EDA a
 
 # Network States and Monitoring
 
-![de:EDA-Overview](Topo6.jpg)
+![de:EDA-Overview](dashboard1.jpg)
 
-
+In EDA, states and monitoring are an integral part of the system, meaning when a Fabric is created, it shows the Fabric components, states and health of its components 
+Let's explore some of the Day 2+ operation. 
 
 # Notified application , discord 
 
