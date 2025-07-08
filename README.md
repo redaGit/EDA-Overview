@@ -207,8 +207,14 @@ Using EDA UI, we will create a 2 EVPNs with 2 bridgedomains
 - [evpnstorage](evpnstorage.yaml) with bridge domain for storage 
 
 # Levarging the Labels 
-Add an EVPN interface
-Remove an EVPN interface 
+
+EDA uses labels to organize and describe resources. Labels are among the metadata common to all resources in EDA. In the EDA GUI, labels can be viewed and entered in the Metadata panel for a resource.
+Labels are not mere descriptions of objects; they are also used throughout EDA as the basis for selecting objects. You can apply the same label to a set of objects and then manipulate them as a group based on that shared label. This makes it easier for system administrators and operators to manage large-scale clusters. 
+
+
+- Using the label add interfaces to the evpn.
+- Using the label remove interfaces from the evpn. 
+
 
 # Connection to the nodes 
 
