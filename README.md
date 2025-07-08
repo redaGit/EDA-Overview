@@ -275,8 +275,25 @@ spec:
  enabled: true
  uri: <webhook>
 ```
+Note: See [step by step](https://containrrr.dev/shoutrrr/v0.8/services/discord/) on how to configure webhook for discord. 
 
 Configure the Notifier 
+This is to tell what information will notify the provider, in this example we will use "interface-alarm" 
+```
+apiVersion: notifiers.eda.nokia.com/v1
+kind: Notifier
+metadata:
+  name: interface-alarm
+  namespace: eda
+spec:
+  enabled: true
+  providers:
+    - discord
+  sources:
+    alarms:
+      include:
+        - InterfaceDown
+```
 
 # EDA RestAPI  
 
