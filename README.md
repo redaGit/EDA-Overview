@@ -139,7 +139,7 @@ Using UI:
 3. YAML view
 
 
-# Create Toloplogy 
+# Create a Toloplogy 
 We will create a new topology of 2 spines and 4 leafs 
 
 
@@ -162,7 +162,6 @@ sudo make TOPO=../images/topo-6nodes.yaml topology-load
 2. Using UI
    Check the resources being created (Topology, nodes, links, interfaces)  
 
-
 # Create a Fabric  (Fabric resource) 
 
 To put it simply, a Fabric resource represents a DC fabric configuration with all its components like:
@@ -172,6 +171,9 @@ To put it simply, a Fabric resource represents a DC fabric configuration with al
 - underlay protocol (eBGP, IGP)
 - overlay protocol
 At the end of the day, a Fabric resource defines and configures everything a DC fabric needs to support overlay networks or L2/L3 services.
+
+Using the UI we will create [EDA-Overview](myfabric.yaml)
+
 
 # Intent and Deviation
 TBD , adding FEC to an interface 
