@@ -229,7 +229,6 @@ The transaction-based model also allows for Dry Runs - seeing what changes will 
 ```
 make node-ssh NODE=leaf1
 ```
-TBD , adding FEC to an interface 
 
 # Create an EVPN overlay 
 
