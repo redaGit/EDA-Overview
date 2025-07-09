@@ -54,7 +54,11 @@ sudo make try-eda
 
 The installation will take approximately 10 minutes to complete. Once it is done, you can optionally verify the installation.
 You should be able to use kubectl -n eda-system get pods to verify that EDA core components have started and in the Ready state:
+
 ```
+cp tools/kubectl-v1.31.1 /usr/loca/bin/kubectl
+```
+
 sudo kubectl -n eda-system get pods | awk 'NR==1 || /eda/'
 ```
 The list of EDA pods and status should be:
