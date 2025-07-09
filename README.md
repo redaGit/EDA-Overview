@@ -300,16 +300,28 @@ spec:
 
 # EDA RestAPI  
 
+# EDA RestAPI  
+
 Every custom resource that gets added through the installation of an App, becomes available through the EDA API . This model provides that powerful extensibility where a system can be extended on-the-fly, by simply installing the EDA App via the EDA Store, and the app will plug its API to the common API layer of the system.
 
 Based on this, the EDA API may be seen as comprised of the two APIs sets:
 
-    Core API
+    - Core API
     This is the EDA Core system API. Things like Transactions, Alarms, and User management are all part of the this API set.
     It can not be extended without installing a new version of the EDA Core.
-    Apps API
+    - Apps API
     Every applications onboarded to the EDA platform (both provided by Nokia or anyone else) will extend the Apps API by adding the applications API to the common API layer.
     This is how extensibility of the API is achieved in EDA.
+
+**API Documentation**
+
+You will find OpenAPI documentation for both EDA Core as well as for every application you have installed in your EDA cluster by using the
+icon in the top right corner and select API Documentation menu item.
+
+**API Authentication**
+
+The API client directly authenticates with Keycloak, and uses the token received for further API calls to the EDA API. The API client is also responsible for refreshing or renewing their token.
+Open a tab with the [authentication docs](https://docs.eda.dev/development/api/#authentication)
 
 
 
