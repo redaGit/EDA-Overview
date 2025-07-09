@@ -110,7 +110,7 @@ Try-EDA default make create a topoogy with 2 leafs and 1 spine. This  topology d
 
 The easiest way to tell the current state of nodes is via the UI, or via kubectl
 ```
-sudo kubectl -n eda get toponodes
+kubectl -n eda get toponodes
 ```
 ```
 NAME     PLATFORM       VERSION   OS    ONBOARDED   MODE     NPP         NODE     AGE
@@ -123,7 +123,7 @@ Using UI:
 
 --> forward the display
 ```
-sudo make start-ui-port-forward
+make start-ui-port-forward
 ```
 ```
 --> The UI can be accessed using https://<x>.wrkshpz.net:9443 
