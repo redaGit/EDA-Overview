@@ -19,6 +19,9 @@ make configure-sysctl-params
 ```
 
 - Set the EXT_DOMAIN_NAME environment variable in your shell:
+
+Replace x with the VM number assiged to you.
+  
 ```
 export EXT_DOMAIN_NAME=\<x\>.wwrkshpz.net
 ```
