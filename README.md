@@ -36,8 +36,6 @@ sudo make configure-sysctl-params
 ```
 
 - Set the EXT_DOMAIN_NAME environment variable in your shell:
-
-Replace \<x\> with the VM number assiged to you.
   
 ```
 export EXT_DOMAIN_NAME=IP_address_of_your_VM
