@@ -12,8 +12,25 @@ cd playground
 ```
 sudo make install-docker
 ```
+
+- Create the docker group.
+
+```
+ sudo groupadd docker
+```
+
+- Add your user to the docker group.
+```
+    sudo usermod -aG docker nokiauser
+```
+**Log out and log back in so that your group membership is re-evaluated.**
+
+
 - Ensure the relevant sysctl values are properly sized by pasting and running the following:
 
+```
+cd playground
+```
 ```
 sudo make configure-sysctl-params
 ```
