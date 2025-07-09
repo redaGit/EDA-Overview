@@ -225,6 +225,10 @@ The user-submitted declarative intents are all transacted together and either al
 The transaction-based model also allows for Dry Runs - seeing what changes will be rolled out to your network before actually applying them.
 
 # Intent and Deviation
+
+```
+make node-ssh NODE=leaf1
+```
 TBD , adding FEC to an interface 
 
 # Create an EVPN overlay 
