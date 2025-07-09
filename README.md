@@ -297,5 +297,16 @@ spec:
 
 # EDA RestAPI  
 
+Every custom resource that gets added through the installation of an App, becomes available through the EDA API . This model provides that powerful extensibility where a system can be extended on-the-fly, by simply installing the EDA App via the EDA Store, and the app will plug its API to the common API layer of the system.
+
+Based on this, the EDA API may be seen as comprised of the two APIs sets:
+
+    Core API
+    This is the EDA Core system API. Things like Transactions, Alarms, and User management are all part of the this API set.
+    It can not be extended without installing a new version of the EDA Core.
+    Apps API
+    Every applications onboarded to the EDA platform (both provided by Nokia or anyone else) will extend the Apps API by adding the applications API to the common API layer.
+    This is how extensibility of the API is achieved in EDA.
+
 
 
