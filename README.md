@@ -10,12 +10,12 @@ cd playground
 ```
 - Install Docker using "make" (automated installer) 
 ```
-make install-docker
+sudo make install-docker
 ```
 - Ensure the relevant sysctl values are properly sized by pasting and running the following:
 
 ```
-make configure-sysctl-params
+sudo make configure-sysctl-params
 ```
 
 - Set the EXT_DOMAIN_NAME environment variable in your shell:
@@ -40,7 +40,7 @@ sudo make try-eda
 The installation will take approximately 10 minutes to complete. Once it is done, you can optionally verify the installation.
 You should be able to use kubectl -n eda-system get pods to verify that EDA core components have started and in the Ready state:
 ```
-kubectl -n eda-system get pods | awk 'NR==1 || /eda/'
+sudo kubectl -n eda-system get pods | awk 'NR==1 || /eda/'
 ```
 The list of EDA pods and status should be:
 ```
@@ -90,7 +90,7 @@ Try-EDA default make create a topoogy with 2 leafs and 1 spine. This  topology d
 
 The easiest way to tell the current state of nodes is via the UI, or via kubectl
 ```
-kubectl -n eda get toponodes
+sudo kubectl -n eda get toponodes
 ```
 ```
 NAME     PLATFORM       VERSION   OS    ONBOARDED   MODE     NPP         NODE     AGE
@@ -100,10 +100,11 @@ spine1   7220 IXR-D5    24.10.1   srl   true        normal   Connected   Synced 
 ```
 
 Using UI:
-```
+
 --> forward the display
 ```
 sudo make start-ui-port-forward
+```
 ```
 --> The UI can be accessed using https://<x>.wrkshpz.net:9443 
 --> INFO: EDA is launched
