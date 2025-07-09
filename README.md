@@ -8,6 +8,13 @@ Proceed with cloning the EDA playground repository that contains everything you 
 git clone https://github.com/nokia-eda/playground && \
 cd playground
 ```
+
+- Install make
+
+```
+sudo apt install -y make
+```
+
 - Install Docker using "make" (automated installer) 
 ```
 make install-docker
@@ -180,7 +187,7 @@ sudo make TOPO=../images/topo-6nodes.yaml topology-load
 ```
 1. Check the state of the nodes
    ```
-   sudo kubectl -n eda get toponodes
+   kubectl -n eda get toponodes
    ```
 2. Using UI
    Check the resources being created (Topology, nodes, links, interfaces)  
@@ -326,8 +333,6 @@ spec:
       include:
         - InterfaceDown
 ```
-
-# EDA RestAPI  
 
 # EDA RestAPI  
 
