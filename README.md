@@ -32,7 +32,7 @@ export LLM_API_KEY=\<your-OpenAI-API-key\>
 
 - Run the EDA install:
 ```
-make try-eda
+sudo make try-eda
 ```
 
 # Verify the installation
