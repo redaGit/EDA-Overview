@@ -164,7 +164,7 @@ sudo make TOPO=../images/topo-6nodes.yaml topology-load
 ```
 1. Check the state of the nodes
    ```
-   kubectl -n eda get toponodes
+   sudo kubectl -n eda get toponodes
    ```
 2. Using UI
    Check the resources being created (Topology, nodes, links, interfaces)  
