@@ -59,7 +59,7 @@ You should be able to use kubectl -n eda-system get pods to verify that EDA core
 sudo cp tools/kubectl-v1.31.1 /usr/local/bin/kubectl
 ```
 ```
-sudo kubectl -n eda-system get pods | awk 'NR==1 || /eda/'
+kubectl -n eda-system get pods | awk 'NR==1 || /eda/'
 ```
 ```
 The list of EDA pods and status should be:
