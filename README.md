@@ -58,11 +58,11 @@ You should be able to use kubectl -n eda-system get pods to verify that EDA core
 ```
 sudo cp tools/kubectl-v1.31.1 /usr/local/bin/kubectl
 ```
-
+```
 sudo kubectl -n eda-system get pods | awk 'NR==1 || /eda/'
 ```
 The list of EDA pods and status should be:
-```
+
 NAME                                  READY   STATUS    RESTARTS   AGE
 cx-eda--leaf1-sim-864b97d58d-g9zq2    2/2     Running   0          12h
 cx-eda--leaf2-sim-6698fc668f-4blcm    2/2     Running   0          12h
