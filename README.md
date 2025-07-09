@@ -323,5 +323,9 @@ icon in the top right corner and select API Documentation menu item.
 The API client directly authenticates with Keycloak, and uses the token received for further API calls to the EDA API. The API client is also responsible for refreshing or renewing their token.
 Open a tab with the [authentication docs](https://docs.eda.dev/development/api/#authentication)
 
+Let's explore the API 
+
+![de:EDA-Overiview](API.jpg)
+
 
 
