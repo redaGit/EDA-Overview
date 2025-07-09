@@ -119,12 +119,8 @@ leaf2    7220 IXR-D3L   24.10.1   srl   true        normal   Connected   Synced 
 spine1   7220 IXR-D5    24.10.1   srl   true        normal   Connected   Synced   12h
 ```
 
-Using UI:
+# Using UI:
 
---> forward the display
-```
-make start-ui-port-forward
-```
 ```
 --> The UI can be accessed using https://<x>.wrkshpz.net:9443 
 --> INFO: EDA is launched
