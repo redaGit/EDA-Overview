@@ -281,6 +281,18 @@ spec:
 ```
 Note: See [step by step](https://containrrr.dev/shoutrrr/v0.8/services/discord/) on how to configure webhook for discord. 
 
+```
+Format the service URL:
+
+https://discord.com/api/webhooks/693853386302554172/W3dE2OZz4C13_4z_uHfDOoC7BqTW288s-z1ykqI0iJnY_HjRqMGO8Sc7YDqvf_KVKjhJ
+                                 └────────────────┘ └──────────────────────────────────────────────────────────────────┘
+                                     webhook id                                    token
+
+discord://W3dE2OZz4C13_4z_uHfDOoC7BqTW288s-z1ykqI0iJnY_HjRqMGO8Sc7YDqvf_KVKjhJ@693853386302554172
+          └──────────────────────────────────────────────────────────────────┘ └────────────────┘
+                                          token
+```
+
 Configure the Notifier 
 This is to tell what information will notify the provider, in this example we will use "interface-alarm" 
 ```
