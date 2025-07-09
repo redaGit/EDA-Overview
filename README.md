@@ -61,6 +61,7 @@ sudo cp tools/kubectl-v1.31.1 /usr/local/bin/kubectl
 ```
 sudo kubectl -n eda-system get pods | awk 'NR==1 || /eda/'
 ```
+```
 The list of EDA pods and status should be:
 
 NAME                                  READY   STATUS    RESTARTS   AGE
