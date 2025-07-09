@@ -40,7 +40,7 @@ sudo make configure-sysctl-params
 Replace \<x\> with the VM number assiged to you.
   
 ```
-export EXT_DOMAIN_NAME=<x>.wwrkshpz.net
+export EXT_DOMAIN_NAME=IP_address_of_your_VM
 ```
 Note: if you want to enable the Natural Language support for the EDA Query functionality, provide the LLM key (OpenAI) with an additional environment variabl.
 ```
