@@ -10,7 +10,7 @@ cd playground
 ```
 - Install Docker using "make" (automated installer) 
 ```
-sudo make install-docker
+make install-docker
 ```
 
 - Create the docker group.
@@ -32,7 +32,7 @@ sudo make install-docker
 cd playground
 ```
 ```
-sudo make configure-sysctl-params
+make configure-sysctl-params
 ```
 
 - Set the EXT_DOMAIN_NAME environment variable in your shell:
@@ -47,7 +47,7 @@ export LLM_API_KEY=\<your-OpenAI-API-key\>
 
 - Run the EDA install:
 ```
-sudo make try-eda
+make try-eda
 ```
 
 # Verify the installation
