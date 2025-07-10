@@ -229,6 +229,7 @@ The transaction-based model also allows for Dry Runs - seeing what changes will 
 ```
 make node-ssh NODE=leaf1
 ```
+Introduce a change to the interface , (like MTU size change) and observe the deviation in EDA. 
 
 # Create an EVPN overlay 
 
